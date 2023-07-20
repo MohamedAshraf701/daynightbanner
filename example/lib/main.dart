@@ -27,18 +27,8 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Display the DayNightBanner widget with the current hour.
-              DayNightBanner(
-                hour: _currentHour,
-                sunImage: 'assets/sun.png',
-                moonImage: 'assets/moon.png',
-                backgroundImage: 'assets/background.png',
-                widthOfSunMoon: 100,
-                bannerHeight: 220,
-                backgroundImageHeight: 200,
-                child: const Text(
-                  'Your Custom Text Here',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
-                ),
+              const DayNightBanner(
+                hour: 12,
               ),
               const SizedBox(height: 20),
               ElevatedButton(

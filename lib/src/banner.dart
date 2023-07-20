@@ -106,7 +106,11 @@ class DayNightBanner extends StatelessWidget {
           BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             boxShadow: const [
-              BoxShadow(offset: Offset(2, 2), color: Colors.black38, blurRadius: 10, spreadRadius: 1),
+              BoxShadow(
+                  offset: Offset(2, 2),
+                  color: Colors.black38,
+                  blurRadius: 10,
+                  spreadRadius: 1),
             ],
           ),
       child: ClipRRect(
@@ -120,7 +124,8 @@ class DayNightBanner extends StatelessWidget {
               LayoutBuilder(
                 builder: (context, constraints) {
                   // Calculate the maximum width available for the sun/moon icons to move horizontally.
-                  final maxWidth = constraints.maxWidth.round() - widthOfSunMoon;
+                  final maxWidth =
+                      constraints.maxWidth.round() - widthOfSunMoon;
 
                   // Calculate the vertical displacement for the sun/moon icons based on the current hour.
                   final top = sin(pi * displace) * 4.1;
@@ -129,12 +134,13 @@ class DayNightBanner extends StatelessWidget {
                   final left = maxWidth * displace;
 
                   return Stack(
+                    fit: StackFit.expand,
                     alignment: Alignment.center,
                     children: <Widget>[
                       // AnimatedPositioned to animate the sun/moon icons' position based on the current hour.
                       AnimatedPositioned(
                         curve: Curves.ease,
-                        bottom: top * 35,
+                        bottom: top * 30,
                         left: left,
                         duration: const Duration(milliseconds: 200),
                         child: SunMoon(
@@ -152,7 +158,12 @@ class DayNightBanner extends StatelessWidget {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: backgroundImage == null
-                    ? Image(image: const AssetImage(ImagesPath.backgroundImage, package: 'daynightbanner'), height: backgroundImageHeight, width: double.infinity, fit: BoxFit.cover)
+                    ? Image(
+                        image: const AssetImage(ImagesPath.backgroundImage,
+                            package: 'daynightbanner'),
+                        height: backgroundImageHeight,
+                        width: double.infinity,
+                        fit: BoxFit.cover)
                     : Image.asset(
                         backgroundImage!,
                         height: backgroundImageHeight,
@@ -161,7 +172,7 @@ class DayNightBanner extends StatelessWidget {
                       ),
               ),
               // Display the additional child widget at the center of the banner.
-              child == null ? const SizedBox() : Align(alignment: Alignment.center, child: child),
+              child == null ? const SizedBox() : child!,
             ],
           ),
         ),
