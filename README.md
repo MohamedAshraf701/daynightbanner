@@ -16,6 +16,16 @@ DayNightBanner is a Flutter package that provides a customizable banner widget d
 - Highly customizable with various properties.
 - Supports both light and dark themes.
 
+## Screenshot
+
+Here's a screenshot of the DayNightBanner widget in action:
+
+![DayNightBanner Screenshot](https://github.com/MohamedAshraf701/daynightbanner/assets/92545354/56b8e1ca-d97c-44ff-87ce-9f5723afc6b6)
+
+![DayNightBanner Screenshot](https://github.com/MohamedAshraf701/daynightbanner/assets/92545354/71bdbb66-91ee-4589-9a4d-7eeb0c880bba)
+
+
+
 ## Installation
 
 Add `daynightbanner` as a dependency in your `pubspec.yaml` file:
