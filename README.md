@@ -44,7 +44,7 @@ To use the `DayNightBanner` widget, simply add it to your widget tree:
 
 ```dart
 DayNightBanner(
-  widthOfSunMoon: 100,
+  bannerHeight: 220,
   // Add more customization properties here
 )
 ```
