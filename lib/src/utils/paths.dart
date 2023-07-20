@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2023 MohmedAshraf
@@ -19,3 +20,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+part of daynightbanner;
+
+/*
+ * The [ImagesPath] class provides a collection of static paths to image assets used in the daynightbanner package.
+ * These paths are used to load the appropriate images for the Sun, Moon, and Background in the DayNightBanner widget.
+ */
+class ImagesPath {
+  /// The path to the image asset representing the Sun.
+  static const String sunImage = "assets/sun.png";
+
+  /// The path to the image asset representing the Moon.
+  static const String moonImage = "assets/moon.png";
+
+  /// The path to the image asset representing the Background.
+  static const String backgroundImage = "assets/background.png";
+}
