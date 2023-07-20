@@ -44,8 +44,8 @@ To use the `DayNightBanner` widget, simply add it to your widget tree:
 
 ```dart
 DayNightBanner(
-  bannerHeight: 220,
-  // Add more customization properties here
+  hour: DateTime.now().hour,
+  // Add other customization properties here
 )
 ```
 
@@ -98,7 +98,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('DayNightBanner Example')),
-        body: DayNightBanner(),
+        body: DayNightBanner(
+        hour: DateTime.now().hour,
+  // Add other customization properties here
+)
+,
       ),
     );
   }
