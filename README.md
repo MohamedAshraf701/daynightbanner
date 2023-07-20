@@ -44,8 +44,8 @@ To use the `DayNightBanner` widget, simply add it to your widget tree:
 
 ```dart
 DayNightBanner(
-  hour: DateTime.now().hour,
-  // Add other customization properties here
+hour: DateTime.now().hour,
+  // Add more customization properties here
 )
 ```
 

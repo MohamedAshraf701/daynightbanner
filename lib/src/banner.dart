@@ -56,6 +56,10 @@ class DayNightBanner extends StatelessWidget {
   /// Custom decoration for the banner container.
   final BoxDecoration? decoration;
 
+  /// The current hour of the day (0 to 23) to determine the time of day.
+  /// This variable is required.
+  final int hour;
+
   /// Creates a new instance of the [DayNightBanner] widget.
   ///
   /// [sunImage]: Path to the image representing the sun icon.
@@ -68,7 +72,8 @@ class DayNightBanner extends StatelessWidget {
   /// [backgroundImageHeight]: Height of the background image. Defaults to 200.
   /// [child]: Additional child widget to be displayed in the banner.
   /// [decoration]: Custom decoration for the banner container.
-  DayNightBanner({
+  /// [hour]: The current hour of the day (0 to 23) to determine the time of day. This variable is required.
+  const DayNightBanner({
     Key? key,
     this.sunImage,
     this.moonImage,
@@ -80,21 +85,21 @@ class DayNightBanner extends StatelessWidget {
     this.backgroundImageHeight = 200,
     this.child,
     this.decoration,
+    required this.hour,
   }) : super(key: key);
 
   /// Get the current hour to determine the time of day.
-  final _hour = DateTime.now().hour;
 
   @override
   Widget build(BuildContext context) {
     // Check if it is daytime (between 6 AM and 6 PM).
-    final isDay = _hour >= 6 && _hour <= 18;
+    final isDay = hour >= 6 && hour <= 18;
 
     // Create a gradient manager to manage the background gradient based on the current hour.
-    final gradientManager = GradientManager(_hour);
+    final gradientManager = GradientManager(hour);
 
     // Calculate the displacement for sun/moon animation.
-    final displace = MathUtils.mapRange(_hour * 1.0, 1, 23);
+    final displace = MathUtils.mapRange(hour * 1.0, 1, 23);
 
     return Container(
       decoration: decoration ??
