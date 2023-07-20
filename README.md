@@ -98,10 +98,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('DayNightBanner Example')),
-        body: DayNightBanner(
-                hour: DateTime.now().hour,
-                // Add other customization properties here
-       ),
+        body:DayNightBanner(
+          hour: DateTime.now().hour,
+        ),
       ),
     );
   }
