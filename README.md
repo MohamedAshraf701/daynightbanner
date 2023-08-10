@@ -1,6 +1,5 @@
 # DayNightBanner
 
-[![Pub Version](https://img.shields.io/pub/v/gradient_icon.svg)](https://pub.dev/packages/gradient_icon)
 ![Flutter Platform](https://img.shields.io/badge/platform-flutter-yellow)
 
 [![pub package](https://img.shields.io/pub/v/daynightbanner.svg)](https://pub.dev/packages/daynightbanner)
