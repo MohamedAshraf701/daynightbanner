@@ -109,16 +109,36 @@ The `MyApp` widget is a stateful widget that displays the DayNightBanner widget 
 
 For more examples and customization options, check out the [example](https://github.com/MohamedAshraf701/daynightbanner/tree/main/example) folder.
 
-## Contributing
-
-Contributions to the `daynightbanner` package and the example project are welcome! Feel free to open issues or submit pull requests.
-
 ## Credits
 
 The DayNightBanner widget and example project are developed and maintained by [Mohamed Ashraf](https://github.com/MohamedAshraf701).
 
 ---
 
-Feel free to explore the example project and the DayNightBanner widget. If you have any questions or feedback, don't hesitate to reach out. Happy coding! 🌞🌙
+## Get in touch
+
+If you have any questions, feel free to reach out:
+
+- Email: ashrafchauhan567@gmail.com
+- GitHub: [@MohamedAshraf701](https://github.com/MohamedAshraf701)
 
 ---
+
+## Contributing
+
+Contributions to the `daynightbanner` package are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
+
+---
+
+## Contributors
+
+<a href="https://github.com/MohamedAshraf701/prayers_times/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=MohamedAshraf701/daynightbanner" />
+</a>
+
+---
+
+Feel free to explore the features of the `daynightbanner` package and customize it to suit your needs. If you have any questions or feedback, don't hesitate to reach out. Happy coding!
+
+
+

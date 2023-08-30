@@ -125,7 +125,8 @@ Widget build(BuildContext context) {
               key: const ValueKey(1),
               child: sunImagePath == null
                   ? const Image(
-                      image: AssetImage(ImagesPath.sunImage, package: &#39;daynightbanner&#39;),
+                      image: AssetImage(ImagesPath.sunImage,
+                          package: &#39;daynightbanner&#39;),
                     )
                   : Image.asset(
                       sunImagePath!,
@@ -137,7 +138,8 @@ Widget build(BuildContext context) {
               key: const ValueKey(2),
               child: moonImagePath == null
                   ? const Image(
-                      image: AssetImage(ImagesPath.moonImage, package: &#39;daynightbanner&#39;),
+                      image: AssetImage(ImagesPath.moonImage,
+                          package: &#39;daynightbanner&#39;),
                     )
                   : Image.asset(
                       moonImagePath!,
@@ -235,7 +237,7 @@ Widget build(BuildContext context) {
 <footer>
   <span class="no-break">
     daynightbanner
-      0.0.0-beta-1
+      0.0.1
   </span>
 
   

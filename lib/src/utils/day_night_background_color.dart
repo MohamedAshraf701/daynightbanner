@@ -43,7 +43,11 @@ class GradientManager {
       return const LinearGradient(
         begin: Alignment(-0.00, -1.00),
         end: Alignment(0, 1.5),
-        colors: [PackageColor.first7To8, PackageColor.second7To8, PackageColor.white],
+        colors: [
+          PackageColor.first7To8,
+          PackageColor.second7To8,
+          PackageColor.white
+        ],
       );
     }
     if (hour >= 9 && hour <= 11) {
@@ -51,7 +55,11 @@ class GradientManager {
       return const LinearGradient(
         begin: Alignment(-0.00, -1.00),
         end: Alignment(0, 1.5),
-        colors: [PackageColor.first9To11, PackageColor.second9To11, PackageColor.white],
+        colors: [
+          PackageColor.first9To11,
+          PackageColor.second9To11,
+          PackageColor.white
+        ],
       );
     }
     if (hour >= 12 && hour <= 15) {
@@ -59,7 +67,11 @@ class GradientManager {
       return const LinearGradient(
         begin: Alignment(-0.00, -1.00),
         end: Alignment(0, 1.5),
-        colors: [PackageColor.first12To15, PackageColor.second12To15, PackageColor.white],
+        colors: [
+          PackageColor.first12To15,
+          PackageColor.second12To15,
+          PackageColor.white
+        ],
       );
     }
     if (hour == 16) {
@@ -67,7 +79,11 @@ class GradientManager {
       return const LinearGradient(
         begin: Alignment(-0.00, -1.00),
         end: Alignment(0, 1.5),
-        colors: [PackageColor.first16, PackageColor.second16, PackageColor.white],
+        colors: [
+          PackageColor.first16,
+          PackageColor.second16,
+          PackageColor.white
+        ],
       );
     }
     if (hour == 17) {
@@ -83,7 +99,11 @@ class GradientManager {
       return const LinearGradient(
         begin: Alignment(-0.00, -1.00),
         end: Alignment(0, 1.5),
-        colors: [PackageColor.first18, PackageColor.second18, PackageColor.white],
+        colors: [
+          PackageColor.first18,
+          PackageColor.second18,
+          PackageColor.white
+        ],
       );
     }
     if (hour >= 19 && hour <= 20) {
@@ -118,7 +138,11 @@ class GradientManager {
       return const LinearGradient(
         begin: Alignment(-0.00, -1.00),
         end: Alignment(0, 1.5),
-        colors: [PackageColor.first5To7, PackageColor.second5To7, PackageColor.white],
+        colors: [
+          PackageColor.first5To7,
+          PackageColor.second5To7,
+          PackageColor.white
+        ],
       );
     }
 

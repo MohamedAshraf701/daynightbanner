@@ -29,7 +29,7 @@
 <header id="title">
   <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
   <ol class="breadcrumbs gt-separated dark hidden-xs">
-    <li class="self-crumb">daynightbanner package</li>
+    <li><a href="https://zaid.digital">daynightbanner package</a></li>
   </ol>
   <div class="self-name">daynightbanner</div>
   <form class="search navbar-right" role="search">
@@ -52,34 +52,106 @@
   <div id="dartdoc-main-content" class="main-content">
       
 <section class="desc markdown">
-  <!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-<p>TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.</p>
+  <h1 id="daynightbanner">DayNightBanner</h1>
+<p><img src="https://img.shields.io/badge/platform-flutter-yellow" alt="Flutter Platform">
+<a href="https://pub.dev/packages/daynightbanner"><img src="https://img.shields.io/pub/v/daynightbanner.svg" alt="pub package"></a></p>
+<p>DayNightBanner is a Flutter package that provides a customizable banner widget displaying the Sun and Moon based on the time of day. It's a visually appealing way to represent the current time and create a day-to-night transition effect.</p>
+<h2 id="screenshot">Screenshot</h2>
+<p>Here are the screenshots of the DayNightBanner widget in action:</p>
+<img src="https://github.com/MohamedAshraf701/daynightbanner/assets/92545354/71bdbb66-91ee-4589-9a4d-7eeb0c880bba" width="300" alt="DayNightBanner Screenshot 2">
+<img src="https://github.com/MohamedAshraf701/daynightbanner/assets/92545354/56b8e1ca-d97c-44ff-87ce-9f5723afc6b6" width="300" alt="DayNightBanner Screenshot 1">
 <h2 id="features">Features</h2>
-<p>TODO: List what your package can do. Maybe include images, gifs, or videos.</p>
-<h2 id="getting-started">Getting started</h2>
-<p>TODO: List prerequisites and provide or point to information on how to
-start using the package.</p>
-<h2 id="usage">Usage</h2>
-<p>TODO: Include short and useful examples for package users. Add longer examples
-to <code>/example</code> folder.</p>
-<pre class="language-dart"><code class="language-dart">const like = 'sample';
+<ul>
+<li>Display a visually appealing banner with the Sun and Moon based on the time of day.</li>
+<li>Automatically updates based on the current time of day.</li>
+<li>Highly customizable with various properties.</li>
+<li>Supports both light and dark themes.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Add <code>daynightbanner</code> as a dependency in your <code>pubspec.yaml</code> file:</p>
+<pre class="language-yaml"><code class="language-yaml">dependencies:
+  flutter:
+    sdk: flutter
+  daynightbanner: &lt;latest_version&gt;
 </code></pre>
-<h2 id="additional-information">Additional information</h2>
-<p>TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.</p>
+<h2 id="usage">Usage</h2>
+<p>Import the package in your Dart file:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:daynightbanner/daynightbanner.dart';
+</code></pre>
+<p>To use the <code>DayNightBanner</code> widget, simply add it to your widget tree:</p>
+<pre class="language-dart"><code class="language-dart">DayNightBanner(
+hour: DateTime.now().hour,
+  // Add more customization properties here
+)
+</code></pre>
+<h2 id="customization">Customization</h2>
+<p>The <code>DayNightBanner</code> widget offers various properties for customization:</p>
+<ul>
+<li><code>sunImage</code> and <code>moonImage</code>: Set the paths to custom images for the Sun and Moon.</li>
+<li><code>backgroundImage</code>: Set a custom background image for the banner.</li>
+<li><code>bannerHeight</code>: Adjust the height of the banner.</li>
+<li><code>backgroundImageHeight</code>: Set the height of the background image.</li>
+<li><code>decoration</code>: Apply a custom decoration to the banner container.</li>
+<li><code>sunSize</code> and <code>moonSize</code>: Define the exact size of the Sun and Moon images.</li>
+<li><code>child</code>: Add child widgets to the banner, such as text or icons.</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>Detailed documentation for the package can be found in the <a href="https://pub.dev/documentation/daynightbanner/latest/daynightbanner/daynightbanner-library.html">API reference</a>.</p>
+<h2 id="changelog">Changelog</h2>
+<p>See the <a href="https://github.com/MohamedAshraf701/daynightbanner/blob/main/CHANGELOG.md">CHANGELOG</a> for a history of changes in the package.</p>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License - see the <a href="https://zaid.digital">LICENSE</a> file for details.</p>
+<h2 id="example-code">Example Code</h2>
+<p>Here is the code for the <code>main.dart</code> file in the example project:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:daynightbanner/daynightbanner.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State&lt;MyApp&gt; createState() =&gt; _MyAppState();
+}
+
+class _MyAppState extends State&lt;MyApp&gt; {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('DayNightBanner Example')),
+        body:DayNightBanner(
+          hour: DateTime.now().hour,
+        ),
+      ),
+    );
+  }
+}
+</code></pre>
+<p>The <code>MyApp</code> widget is a stateful widget that displays the DayNightBanner widget in the <code>Scaffold</code> body. The banner will automatically adjust its appearance based on the current time of day.</p>
+<p>For more examples and customization options, check out the <a href="https://github.com/MohamedAshraf701/daynightbanner/tree/main/example">example</a> folder.</p>
+<h2 id="credits">Credits</h2>
+<p>The DayNightBanner widget and example project are developed and maintained by <a href="https://github.com/MohamedAshraf701">Mohamed Ashraf</a>.</p>
+<hr>
+<h2 id="get-in-touch">Get in touch</h2>
+<p>If you have any questions, feel free to reach out:</p>
+<ul>
+<li>Email: <a href="mailto:ashrafchauhan567@gmail.com">ashrafchauhan567@gmail.com</a></li>
+<li>GitHub: <a href="https://github.com/MohamedAshraf701">@MohamedAshraf701</a></li>
+</ul>
+<hr>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions to the <code>daynightbanner</code> package are welcome! Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before submitting a pull request.</p>
+<hr>
+<h2 id="contributors">Contributors</h2>
+<a href="https://github.com/MohamedAshraf701/prayers_times/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=MohamedAshraf701/daynightbanner">
+</a>
+<hr>
+<p>Feel free to explore the features of the <code>daynightbanner</code> package and customize it to suit your needs. If you have any questions or feedback, don't hesitate to reach out. Happy coding!</p>
 </section>
 
 
@@ -106,7 +178,7 @@ from the package authors, and more.</p>
 </header>
 
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
-  <li class="self-crumb">daynightbanner package</li>
+  <li><a href="https://zaid.digital">daynightbanner package</a></li>
 </ol>
 
 
@@ -126,7 +198,7 @@ from the package authors, and more.</p>
 <footer>
   <span class="no-break">
     daynightbanner
-      0.0.0-beta-1
+      0.0.1
   </span>
 
   

@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed the issue with sun and moon icon positions during certain hours of the day.
 - Resolved the bug related to incorrect sizing of the sun and moon icons.
 
-## [0.0.1] - 2023-07-20
+## [0.0.2] - 2023-08-31
 
 ### Added
 

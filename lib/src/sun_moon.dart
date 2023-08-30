@@ -75,7 +75,8 @@ class SunMoon extends StatelessWidget {
                 key: const ValueKey(1),
                 child: sunImagePath == null
                     ? const Image(
-                        image: AssetImage(ImagesPath.sunImage, package: 'daynightbanner'),
+                        image: AssetImage(ImagesPath.sunImage,
+                            package: 'daynightbanner'),
                       )
                     : Image.asset(
                         sunImagePath!,
@@ -87,7 +88,8 @@ class SunMoon extends StatelessWidget {
                 key: const ValueKey(2),
                 child: moonImagePath == null
                     ? const Image(
-                        image: AssetImage(ImagesPath.moonImage, package: 'daynightbanner'),
+                        image: AssetImage(ImagesPath.moonImage,
+                            package: 'daynightbanner'),
                       )
                     : Image.asset(
                         moonImagePath!,
