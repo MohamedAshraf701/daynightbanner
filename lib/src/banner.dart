@@ -116,7 +116,7 @@ class DayNightBanner extends StatelessWidget {
     return Container(
       decoration: decoration,
       child: ClipRRect(
-        borderRadius: decoration.borderRadius,
+        borderRadius: decoration.borderRadius ?? BorderRadius.zero,
         child: AnimatedContainer(
           decoration: BoxDecoration(gradient: gradientManager.gradient),
           duration: const Duration(seconds: 1),
