@@ -101,20 +101,22 @@ class DayNightBanner extends StatelessWidget {
     // Calculate the displacement for sun/moon animation.
     final displace = MathUtils.mapRange(hour * 1.0, 1, 23);
 
+    final decoration = this.decoration ??
+        BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: const [
+            BoxShadow(
+                offset: Offset(2, 2),
+                color: Colors.black38,
+                blurRadius: 10,
+                spreadRadius: 1),
+          ],
+        );
+
     return Container(
-      decoration: decoration ??
-          BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: const [
-              BoxShadow(
-                  offset: Offset(2, 2),
-                  color: Colors.black38,
-                  blurRadius: 10,
-                  spreadRadius: 1),
-            ],
-          ),
+      decoration: decoration,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: decoration.borderRadius,
         child: AnimatedContainer(
           decoration: BoxDecoration(gradient: gradientManager.gradient),
           duration: const Duration(seconds: 1),
