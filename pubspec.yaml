@@ -26,7 +26,9 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   assets:
-    - assets/
+    - assets/background.png
+    - assets/moon.png
+    - assets/sun.png
 
 
   #   - images/a_dot_ham.jpeg
