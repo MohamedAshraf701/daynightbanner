@@ -9,8 +9,8 @@ DayNightBanner is a Flutter package that provides a customizable banner widget d
 
 Here are the screenshots of the DayNightBanner widget in action:
 
-<img src="https://github.com/MohamedAshraf701/daynightbanner/assets/92545354/71bdbb66-91ee-4589-9a4d-7eeb0c880bba" width="300" alt="DayNightBanner Screenshot 2">
-<img src="https://github.com/MohamedAshraf701/daynightbanner/assets/92545354/56b8e1ca-d97c-44ff-87ce-9f5723afc6b6" width="300" alt="DayNightBanner Screenshot 1">
+<img src="https://raw.githubusercontent.com/MohamedAshraf701/daynightbanner/screenshots/screenshot-day.png" width="300" alt="DayNightBanner Example Screenshot for Day">
+<img src="https://raw.githubusercontent.com/MohamedAshraf701/daynightbanner/screenshots/screenshot-night.png" width="300" alt="DayNightBanner Example Screenshot for Night">
 
 ## Features
 
