@@ -2,8 +2,15 @@
 
 ![Flutter Platform](https://img.shields.io/badge/platform-flutter-yellow)
 [![pub package](https://img.shields.io/pub/v/daynightbanner.svg)](https://pub.dev/packages/daynightbanner)
+[![pub points](https://img.shields.io/pub/points/daynightbanner?color=2E8B57&label=pub%20points)](https://pub.dev/packages/daynightbanner/score)
 
 DayNightBanner is a Flutter package that provides a customizable banner widget displaying the Sun and Moon based on the time of day. It's a visually appealing way to represent the current time and create a day-to-night transition effect.
+
+## Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows |
+| :-----: | :-: | :---: | :-: | :---: | :-----: |
+|   ✅    | ✅  |  ✅   | ✅  |  ✅   |   ✅    |
 
 ## Screenshot
 
