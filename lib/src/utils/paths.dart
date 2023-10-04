@@ -29,11 +29,11 @@ part of daynightbanner;
  */
 class ImagesPath {
   /// The path to the image asset representing the Sun.
-  static const String sunImage = "assets/sun.png";
+  static const String sunImage = "assets/sun.webp";
 
   /// The path to the image asset representing the Moon.
-  static const String moonImage = "assets/moon.png";
+  static const String moonImage = "assets/moon.webp";
 
   /// The path to the image asset representing the Background.
-  static const String backgroundImage = "assets/background.png";
+  static const String backgroundImage = "assets/background.webp";
 }
