@@ -58,3 +58,9 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+
+screenshots:
+  - description: 'Screenshot for Day View'
+    path: screenshots/screenshot-day.png
+  - description: 'Screenshot for Night View'
+    path: screenshots/screenshot-night.png
